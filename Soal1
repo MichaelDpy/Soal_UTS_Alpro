@@ -11,3 +11,7 @@ int main() {
     bool hanyaAngka = true;
     char awal1 = '\0';
     char awal2 = '\0';
+
+    while (input[panjang] != '\0') {
+        if (panjang == 0) awal1 = input[0];
+        if (panjang == 1) awal2 = input[1];
