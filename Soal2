@@ -1,1 +1,100 @@
-//Kerjakan soal nomor 2 disini (Hapus komentar ini)
+#include <iostream>  
+using namespace std;
+
+int main() {
+    char kodeparkir[11];    
+    char waktukeluar[5];    
+    int jeniskendaraan;     
+    int jammasuk;           
+    int menitmasuk;         
+    int jamkeluar;          
+    int menitkeluar;        
+    int lokasiparkir;       
+    int lamaparkir_menit;   
+    int lamajam;            
+    int biayaparkir;        
+    char namakendaraan[20]; 
+    
+    cout<< "Masukkan kode parkir (10 digit): ";  
+    cin>> kodeparkir;      
+    cout<< "Masukkan jam keluar (format HHMM): "; 
+    cin>> waktukeluar;     
+    
+    int panjangKode = 0;
+    for (panjangKode = 0; kodeparkir[panjangKode] != '\0'; panjangKode++);
+    
+    int panjangWaktu = 0;
+    for (panjangWaktu = 0; waktukeluar[panjangWaktu] != '\0'; panjangWaktu++);
+    
+    if (panjangKode != 10 || panjangWaktu != 4) {  
+        cout<< "Input tidak valid!" <<endl;  
+        return 1;  
+    }
+    
+    jeniskendaraan = (kodeparkir[0] - '0') * 10 + (kodeparkir[1] - '0');
+    jammasuk = (kodeparkir[2] - '0') * 10 + (kodeparkir[3] - '0');
+    menitmasuk = (kodeparkir[4] - '0') * 10 + (kodeparkir[5] - '0');
+    
+    lokasiparkir = 0;
+    for (int i = 6; i < 10; i++) {
+        lokasiparkir = lokasiparkir * 10 + (kodeparkir[i] - '0');
+    }
+    
+    jamkeluar = (waktukeluar[0] - '0') * 10 + (waktukeluar[1] - '0');
+    menitkeluar = (waktukeluar[2] - '0') * 10 + (waktukeluar[3] - '0');
+    
+    int waktumasukdlmmenit = jammasuk * 60 + menitmasuk; 
+    int waktukeluardlmmenit = jamkeluar * 60 + menitkeluar;  
+    
+    if (waktukeluardlmmenit < waktumasukdlmmenit) {  
+        waktukeluardlmmenit += 24 * 60;  
+    }
+    
+    lamaparkir_menit = waktukeluardlmmenit - waktumasukdlmmenit;  
+    
+    lamajam = lamaparkir_menit / 60;
+    if (lamaparkir_menit % 60 > 0) {
+        lamajam++; 
+    }   
+    
+    if (jeniskendaraan == 10) {  
+        
+        const char temp[] = "Mobil pribadi";
+        for (int i = 0; i < 14; i++) {
+            namakendaraan[i] = temp[i];
+        }
+        
+        if (lamajam <= 1) {  
+            biayaparkir = 5000;  
+        } else {  
+            biayaparkir = 5000 + (lamajam - 1) * 3000;  
+        }
+    } else if (jeniskendaraan == 20) {  
+        
+        const char temp[] = "Motor";
+        for (int i = 0; i < 6; i++) {
+            namakendaraan[i] = temp[i];
+        }
+        
+        if (lamajam <= 1) {  
+            biayaparkir = 3000;  
+        } else {  
+            biayaparkir = 3000 + (lamajam - 1) * 2000;  
+        }
+    } else if (jeniskendaraan == 30) {  
+        const char temp[] = "Bus";
+        for (int i = 0; i < 4; i++) {
+            namakendaraan[i] = temp[i];
+        }
+        
+        if (lamajam <= 1) {  
+            biayaparkir = 10000;  
+        } else {  
+            biayaparkir = 10000 + (lamajam - 1) * 7000;  
+        }
+    } else {  
+        cout << "Jenis kendaraan tidak valid!" << endl;  
+        return 1;  
+    }
+    
+    
