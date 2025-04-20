@@ -9,3 +9,38 @@ int main() {
         cin >> babak;
     cout << "Masukkan pemain menang setiap babak (A/B/S jika seri): ";
         cin >> pemain;
+
+    int poinA = 0, poinB = 0;
+    int menangA = 0, menangB = 0;
+
+    for (int i = 0; i < babak; ++i) {
+        char hasil = pemain[i];
+
+        if (hasil == 'A') {
+            poinA += 3;
+            menangA++;
+            menangB = 0;
+        } else if (hasil == 'B') {
+            poinB += 3;
+            menangB++;
+            menangA = 0;
+        } else if (hasil == 'S') {
+            poinA += 1;
+            poinB += 1;
+            menangA = 0;
+            menangB = 0;
+        }
+
+        if (menangA == 3) {
+            poinA += 2;
+            menangA = 0;
+        }
+        if (menangB == 3) {
+            poinB += 2;
+            menangB = 0;
+        }
+    }
+
+    cout << "Poin A: " << poinA << endl;
+    cout << "Poin B: " << poinB << endl;
+
