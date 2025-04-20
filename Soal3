@@ -1,1 +1,46 @@
-//Kerjakan soal nomor 3 disini (Hapus komentar ini)
+#include <iostream>  
+using namespace std;
+
+int main() { 
+    string kodetransaksi;   
+    int kodehari;           
+    int poinkesetiaan;      
+    int jlhbelanja;                 
+    int totalpoin;          
+    
+    
+    cout<< "Masukkan kode transaksi (8 digit): ";  
+    cin>> kodetransaksi;  
+    
+    int panjangkode = 0;
+    for (int i = 0; kodetransaksi[i] != '\0'; i++) {
+        panjangkode++;
+    }
+    
+    if (panjangkode != 8) {  
+        cout<< "Kode transaksi tidak valid! Harus 8 digit."<<endl;  
+        return 1;   
+    }
+    
+    
+    kodehari =(kodetransaksi[0] -'0') *10 + (kodetransaksi[1] -'0');
+    poinkesetiaan =(kodetransaksi[2] -'0') * 10 + (kodetransaksi[3] -'0');
+    
+    
+    jlhbelanja = 0;
+    for (int i= 4; i< 8; i++) {
+        jlhbelanja= jlhbelanja * 10 + (kodetransaksi[i] -'0');
+    }
+    
+    
+    if (kodehari< 1 || kodehari> 3) {  
+        cout<< "Kode hari tidak valid!" << endl;  
+        return 1;  
+    }
+    
+    
+    if (poinkesetiaan < 1 || poinkesetiaan > 3) {  
+        cout<< "Kode setia tidak valid!" << endl;  
+        return 1;  
+    }
+    
