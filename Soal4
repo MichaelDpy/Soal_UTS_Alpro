@@ -1,1 +1,11 @@
-//Kerjakan soal nomor 4 disini (Hapus komentar ini)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int babak;
+    string pemain;
+
+    cout << "Masukkan jumlah babak: " << endl; 
+        cin >> babak;
+    cout << "Masukkan pemain menang setiap babak (A/B/S jika seri): ";
+        cin >> pemain;
