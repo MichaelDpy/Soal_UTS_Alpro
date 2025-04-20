@@ -96,5 +96,25 @@ int main() {
         cout << "Jenis kendaraan tidak valid!" << endl;  
         return 1;  
     }
+
+    cout<< "--- Ringkasan Parkir ---" <<endl;  
+    cout<< "Jenis Kendaraan : " << namakendaraan <<endl;  
     
+    cout<< "Waktu Masuk     : ";
+    if (jammasuk < 10) cout << "0"; 
+    cout<< jammasuk << ":";
+    if (menitmasuk < 10) cout << "0"; 
+    cout << menitmasuk <<endl;
+    
+    cout<< "Waktu Keluar    : ";
+    if (jamkeluar < 10) cout << "0"; 
+    cout<< jamkeluar << ":";
+    if (menitkeluar < 10) cout << "0"; 
+    cout<< menitkeluar <<endl;
+    
+    cout<< "Durasi Parkir   : " << lamajam << " jam" <<endl;  
+    cout<< "Lokasi Parkir   : " << lokasiparkir <<endl;  
+    cout<< "Biaya Parkir    : Rp " << biayaparkir <<endl;  
+    return 0;  
+}
     
