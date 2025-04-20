@@ -89,3 +89,11 @@ switch (kodehari) {
     
     
     totalpoin = jlhbelanja * poinperunit;
+
+    cout <<"Jenis Hari       : " << harikesetiaan <<endl;  
+    cout <<"Jenis Pelanggan  : " << jenispelanggan <<endl;  
+    cout <<"Jumlah Belanja   : Rp " << jlhbelanja * 100000 <<endl;  
+    cout <<"Total Poin       : " << totalpoin<< " poin" <<endl;   
+    
+    return 0;  
+}
