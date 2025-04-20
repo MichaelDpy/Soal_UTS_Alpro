@@ -27,3 +27,6 @@ int main() {
         tipe = "NUSANTARA";
     } else if (panjang == 16 && awal1 == '7' && (awal2 == '7' || awal2 == '8')) {
         tipe = "GARUDA";
+    } else if (panjang == 15 && awal1 == '9' && awal2 == '1') {
+        tipe = "MERDEKA";
+    }
