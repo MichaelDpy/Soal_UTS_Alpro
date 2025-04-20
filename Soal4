@@ -30,7 +30,7 @@ int main() {
             menangA = 0;
             menangB = 0;
         }
-
+    
         if (menangA == 3) {
             poinA += 2;
             menangA = 0;
@@ -40,9 +40,6 @@ int main() {
             menangB = 0;
         }
     }
-
-    cout << "Poin A: " << poinA << endl;
-    cout << "Poin B: " << poinB << endl;
 
     cout << "Poin A: " << poinA << endl;
     cout << "Poin B: " << poinB << endl;
