@@ -49,3 +49,11 @@ int main() {
             total += angka;
             posisi++;
         }
+
+        if (total % 10 == 0) {
+            cout << "Nomor kartu VALID." << endl;
+        } else {
+            cout << "Nomor kartu TIDAK VALID." << endl;
+        }
+    } 
+}
