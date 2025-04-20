@@ -58,4 +58,27 @@ int main() {
     return 0;
 }
 
+/* 
+1.Babak disimpan dalam integer, dan pemain disimpan sebagai string.
 
+2.Program meminta user input jumlah babak dan pemain yang menang setiap babak,
+    kemudian program menerima inputan tersebut.
+
+3.poinA dan poinB untuk menyimpan poin total masing masing, 
+    menangA dan menangB menyimpan berapa kali pemain A atau pemain B menang.
+
+4.Program looping: for (int i = 0; i < babak; ++i)
+    Looping sebanyak jumlah babak yang diinput, setiap loop lihat hasil dari pemain[i]
+    Kalau A menang: Tambah 3 poin ke A, tambah hitungan kemenangan berturut-turut A(menangA) , reset menangB karena B gak menang. BERLAKU SEBALIKNYA JIKA B MENANG
+    Kalau seri: Kedua pemain dapat 1 poin, menangA dan menangB direset
+
+5.Kemudian untuk konteks bonus poin:
+    Jika salah satu pemain menang 3 kali berturut turut, maka akan ditambah 2 poin. Lalu reset kembali hitungannya ke 0
+
+6.Program menampilkan total poin yang didapat setiap pemain.
+
+7.Menentukan pemain yang menang:
+    Program melalukan perbandingan poin, pemain mana yang lebih besar poinnya atau seri.
+    
+8.Selesai 
+*/
