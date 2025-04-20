@@ -1,1 +1,8 @@
-//Kerjakan soal nomor 1 disini (Hapus komentar ini)
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    char input[50];  
+    cout << "Masukkan nomor kartu digital: ";
+    cin >> input;
