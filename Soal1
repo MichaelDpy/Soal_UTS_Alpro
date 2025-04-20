@@ -21,3 +21,8 @@ int main() {
         }
         panjang++;
     }
+
+
+    const char* tipe = "TIDAK DIKETAHUI";
+    if (panjang == 14 && awal1 == '6' && awal2 == '5') {
+        tipe = "NUSANTARA";
