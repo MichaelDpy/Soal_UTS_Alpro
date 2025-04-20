@@ -30,3 +30,9 @@ int main() {
     } else if (panjang == 15 && awal1 == '9' && awal2 == '1') {
         tipe = "MERDEKA";
     }
+
+    cout << "Tipe kartu: " << tipe << endl;
+
+    if (tipe[0] != 'T' && hanyaAngka) {
+        int total = 0;
+        int posisi = 1;
