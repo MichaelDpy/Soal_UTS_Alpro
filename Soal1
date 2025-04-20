@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 int main() {
     char input[50];  
     cout << "Masukkan nomor kartu digital: ";
@@ -66,4 +65,18 @@ int main() {
 3. Loop ini membaca tiap karakter dari input.
    Simpan dua karakter pertama (awal1 dan awal2) untuk mengecek jenis kartu.
    Cek apakah semuanya angka, kalau ada huruf maka hanyaAngka jadi false.
-4. Hitung jumlah karakter (panjang nomor kartu). */
+4. Hitung jumlah karakter (panjang nomor kartu). 
+5. Jenis kartu dikenali dari dua digit pertama dan panjangnya:
+   NUSANTARA: mulai dengan 65, panjang 14 digit.
+   GARUDA: mulai dengan 77 atau 78, panjang 16 digit.
+   MERDEKA: mulai dengan 91, panjang 15 digit.
+   Kalau tidak cocok, maka "TIDAK DIKETAHUI."
+6. Lanjut ke pengecekan, valid jika:
+   Jenis kartu diketahui.
+   Isinya benar-benar angka.
+7. Mulai dari digit paling kanan, angka di posisi genap dikalikan 2.
+   Jika hasil kali lebih dari 9, pecah jadi penjumlahan digit (contoh: 16 → 1 + 6 = 7).
+   Semua angka dijumlahkan ke total.
+8. Kalau total habis dibagi 10 → nomor kartu valid.
+   Kalau tidak → nomor kartu tidak valid.
+   */
