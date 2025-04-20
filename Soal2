@@ -118,3 +118,37 @@ int main() {
     return 0;  
 }
     
+/*
+1.kodeparkir, waktukendaraan, dan namakendaraan disimpan atau dideklarasikan dalam bentuk char,dan jeniskendaraan, jammasuk, menitmasuk, jamkeluar, menitkeluar, lokasiparkir, lamaparkir_menit, lamajam, biayaparkir disimpan dalam bentuk integer.
+
+2.program meminta input dari user, kode parkir harus 10 digit dan jam keluar harus 4 digit
+    dalam format HHMM dan program menerima inputan tersebut.
+
+3. Validasi panjang input:
+   - Program menghitung panjang kode parkir dan waktu keluar menggunakan loop
+
+4. Program memproses data dari kode parkir:
+   - Digit 1-2: jenis kendaraan
+   - Digit 3-4: jam masuk
+   - Digit 5-6: menit masuk
+   - Digit 7-10: lokasi parkir 
+
+5. Memproses data dari waktu keluar:
+   - Digit 1-2: jam keluar 
+   - Digit 3-4: menit keluar 
+
+6. Perhitungan durasi parkir:
+   - Program konversi waktu masuk dan keluar ke dalam menit
+   - Jika waktu keluar < waktu masuk, berarti melewati tengah malam,
+      maka tambahkan 1440 menit (24 jam)
+   - Hitung selisih waktu untuk mendapatkan durasi parkir(menit)
+   - Konversi durasi menit ke jam dan bulatkan ke atas jika ada sisa menit
+
+7. Penentuan jenis kendaraan dan perhitungan biaya:
+    - Mobil: 5.000 jam pertama + 3.000/jam selanjutnya
+    - Motor: 3.000 jam pertama + 2.000/jam selanjutnya
+    - Bus  : 10.000 jam pertama + 7.000/jam selanjutnya
+
+8. Menampilkan hasil dalam output terformat:
+   menampilkan jenis kendaraan, waktu masuk, waktu keluar, durasi parkir, lokasi parkir, dan biaya parkir yang dihitung
+*/
