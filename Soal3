@@ -121,4 +121,64 @@ switch (kodehari) {
    -kode 1: Hari Kerja
    -kode 2: Akhir Pekan
    -kode 3: Hari Libur Nasional
+
+7.menentukan jenis pelanggan berdasarkan kode kesetiaan:
+   -kode 1: Pelanggan Biasa
+   -kode 2: Member Silver
+   -kode 3: Member Gold
+
+8.menentukan poin per unit belanja:
+   - bergantung pada kombinasi jenis hari dan jenis pelanggan
+   - Hari Kerja (1):
+        Pelanggan Biasa (1): 1 poin per unit
+        Member Silver (2): 2 poin per unit
+        Member Gold (3): 3 poin per unit
+   - Akhir Pekan (2):
+        Pelanggan Biasa (1): 2 poin per unit
+        Member Silver (2): 3 poin per unit
+        Member Gold (3): 5 poin per unit
+   - Hari libur nasional (3):
+        Pelanggan Biasa (1): 3 poin per unit
+        Member Silver (2): 5 poin per unit
+        Member Gold (3): 7 poin per unit
+
+9.perhitungan total poin:
+    total poin = jumlah belanja × poin per unit
+
+10.menampilkan hasil:
+    jenis hari
+    jenis pelanggan
+    jumlah belanja dalam format Rp (dikalikan 100.000)
+    total poin yang diperoleh
+
+7.menentukan jenis pelanggan berdasarkan kode kesetiaan:
+   -kode 1: Pelanggan Biasa
+   -kode 2: Member Silver
+   -kode 3: Member Gold
+
+8.menentukan poin per unit belanja:
+   - bergantung pada kombinasi jenis hari dan jenis pelanggan
+   - Hari Kerja (1):
+        Pelanggan Biasa (1): 1 poin per unit
+        Member Silver (2): 2 poin per unit
+        Member Gold (3): 3 poin per unit
+   - Akhir Pekan (2):
+        Pelanggan Biasa (1): 2 poin per unit
+        Member Silver (2): 3 poin per unit
+        Member Gold (3): 5 poin per unit
+   - Hari libur nasional (3):
+        Pelanggan Biasa (1): 3 poin per unit
+        Member Silver (2): 5 poin per unit
+        Member Gold (3): 7 poin per unit
+
+9.perhitungan total poin:
+    total poin = jumlah belanja × poin per unit
+
+10.menampilkan hasil:
+    jenis hari
+    jenis pelanggan
+    jumlah belanja dalam format Rp (dikalikan 100.000)
+    total poin yang diperoleh
+
+11.program selesai
 */
